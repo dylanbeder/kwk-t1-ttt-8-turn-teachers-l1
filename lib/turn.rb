@@ -3,13 +3,13 @@ def turn(board)
   ind=gets.strip
   index=input_to_index(ind)
   if valid_move?(board,index)== true
-    move(board,index)
+    move(board,index,character)
   else
     turn(board)
   end
 end
 
-def display_board(boards)
+def display_board(board)
   puts " #{boards[0]} | #{boards[1]} | #{boards[2]} "
   puts "-----------"
   puts " #{boards[3]} | #{boards[4]} | #{boards[5]} "
@@ -40,8 +40,8 @@ def input_to_index(num)
   index=xo-1 
 end
 
-def move(board, index)
-  board[index]= "X"
+def move(board, index, character)
+  board[index]= character
 end
 
 
