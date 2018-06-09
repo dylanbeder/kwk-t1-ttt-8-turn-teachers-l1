@@ -14,7 +14,13 @@ def position_taken(board, index)
   
 end 
 
-def move(board, index)
-  
+def input_to_index(num)
+  xo=num.to_i
+  index=xo-1 
 end
+
+def move(board, index, character="X")
+  board[index]= character
+end
+
 
