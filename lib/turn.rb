@@ -1,3 +1,5 @@
+def turn()
+
 def display_board(boards)
   puts " #{boards[0]} | #{boards[1]} | #{boards[2]} "
   puts "-----------"
