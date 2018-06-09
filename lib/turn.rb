@@ -6,13 +6,23 @@ def display_board(boards)
   puts " #{boards[6]} | #{boards[7]} | #{boards[8]} "
 end
 
-def valid_move?(board, index)
-  
+def valid_move?(board,index)
+  if index<0 || index> 8
+    return false
+  elsif position_taken?(board,index) == true
+    return false
+  else 
+    return true
+  end
 end
 
-def position_taken(board, index)
-  
-end 
+def position_taken?(board, index)
+  if board[index] ==" " || board[index] =="" || board[index] ==nil
+    return false
+  elsif board[index] =="X" || board[index] =="O"
+    return true
+  end
+end
 
 def input_to_index(num)
   xo=num.to_i
