@@ -42,7 +42,7 @@ def input_to_index(num)
 end
 
 def move(board, index, character="X")
-  board[index]= character
+  board[index]= "X"
 end
 
 
