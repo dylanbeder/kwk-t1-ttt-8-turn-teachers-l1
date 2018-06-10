@@ -4,7 +4,7 @@ def turn(board)
   ind=gets.strip
   index=input_to_index(ind)
   if valid_move?(board,index)== true
-    move(board,index)
+    move(board,index,character)
     display_board(board)
   else
     turn(board)
