@@ -42,8 +42,13 @@ def input_to_index(num)
   index=xo-1 
 end
 
-def move(board, index)
-  board[index]= "X"
+def move(board, index,character)
+  if character=="O"
+    board[index]= "O"
+  else
+    board[index]="X"
+  end
+  
 end
 
 
