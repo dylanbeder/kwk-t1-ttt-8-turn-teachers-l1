@@ -1,4 +1,4 @@
-def turn(board)
+def turn(board, character)
   puts "Please enter 1-9:"
   ind=gets.strip
   index=input_to_index(ind)
