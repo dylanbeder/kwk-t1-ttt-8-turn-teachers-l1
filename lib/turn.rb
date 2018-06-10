@@ -1,7 +1,7 @@
 
 def turn(board)
   puts "Please enter 1-9:"
-  character=
+  character="X"
   ind=gets.strip
   index=input_to_index(ind)
   if valid_move?(board,index)== true
@@ -43,10 +43,8 @@ def input_to_index(num)
   index=xo-1 
 end
 
-def move(board, index,character)
-  
-    board[index]= character
-  
+def move(board,index,character = "X")
+    board[index]=character
   
 end
 
