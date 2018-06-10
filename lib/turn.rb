@@ -44,11 +44,9 @@ def input_to_index(num)
 end
 
 def move(board, index,character)
-  if character=="O"
-    board[index]= "O"
-  else
-    board[index]="X"
-  end
+  
+    board[index]= character
+  
   
 end
 
