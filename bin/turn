@@ -12,7 +12,7 @@ move(board, 1, "X")
 
 display_board(board)
 
-turn(board)
+turn(board, character)
 
 
 
