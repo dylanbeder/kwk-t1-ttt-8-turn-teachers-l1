@@ -1,4 +1,6 @@
-def turn(board, character)
+character="X"
+
+def turn(board)
   puts "Please enter 1-9:"
   ind=gets.strip
   index=input_to_index(ind)
@@ -6,7 +8,7 @@ def turn(board, character)
     move(board,index,character)
     display_board(board)
   else
-    turn(board, character)
+    turn(board)
   end
 end
 
